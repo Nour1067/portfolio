@@ -3,86 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="gomycode " />
-    <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./portfolio.css" />
     <title>portfolio</title>
   </head>
   <body>
     <!--partie navbar-->
     <nav>
-      <button>home</button>
       <button>about</button>
-      <button>work</button>
       <button><a href="#contact">contact</a></button>
     </nav>
     <!--partie about-->
     <div>
-      <h1 id="title">Nour Tabbane</h1>
+      <h1 id="title">Hey!</h1>
       <p class="text" id="p">
-        Hey! I’m Nour tabbane, from tunisia!<br />
+        I’m Nour tabbane, from tunisia!<br />
         I love programming, as well as playing guitar, taking photos and
         learning new things!<br />
-        Feel free to get in touch or take a look at my past work below.
       </p>
       <br />
-      <img src="./guitar.jpg" alt="photo" width="220" height="240" controls />
+      <img
+        src="./musical-instruments.webp"
+        alt="photo"
+        width="520"
+        height="350"
+        id="photo1"
+        controls
+      />
     </div>
     <!--partie work-->
-    <div>
-      <p class="text"><span id="spn">web</span> developer</p>
-    </div>
-    <hr />
-    <!--partie resume-->
-    <div>
-      <ul>
-        <li>exprience</li>
-        <li>diplome</li>
-        <li>skills</li>
-      </ul>
+    <div id="ins">
+      <form>
+        <fieldset>
+          <legend>"Exploring Musical Instruments"</legend>
+          <table border="1">
+            <tr>
+              <th>Guitar</th>
+              <td>
+                a stringed instrument with a flat body, a long neck with frets,
+                and usually six strings that are played with the fingers or with
+                a pick.
+              </td>
+              <td>
+                <img src="./guitar.jpg" alt="photo" width="50" height="50" />
+              </td>
+            </tr>
+            <tr>
+              <th>Piano</th>
+              <td>
+                The piano is a versatile keyboard instrument that produces sound
+                by striking strings with hammers. It covers a wide range of
+                pitches and is used in classical, jazz, and popular music.
+              </td>
+              <td>
+                <img src="./piano.jpeg" alt="photo" width="50" height="50" />
+              </td>
+            </tr>
+            <tr>
+              <th>Drums</th>
+              <td>
+                Percussion instruments played by striking with sticks or hands.
+                They include the bass drum, snare drum, and cymbals, crucial in
+                rhythm sections of bands.
+              </td>
+              <td>
+                <img src="./drums.jpeg" alt="photo" width="50" height="50" />
+              </td>
+            </tr>
+          </table>
+          <p id="w">What do you like the most?</p>
+          <input name="r" id="guitar" type="radio" /><label for="guitar"
+            >Guitar</label
+          >
+          <input name="r" id="piano" type="radio" /><label for="piano"
+            >Piano</label
+          >
+          <input name="r" id="drums" type="radio" /><label for="drums"
+            >Drums</label
+          >
+        </fieldset>
+      </form>
     </div>
     <!--partie contact-->
     <div id="contact">
       <hr />
       <form>
-        <div class="inpt">
-          <label>name</label>
-          <input type="text" placeholder="nour" />
-        </div>
-        <div class="inpt">
-          <label>email</label>
-          <input type="email" />
-        </div>
-        <div class="inpt">
-          <label>password</label>
-          <input type="password" />
-          <i class="fa-regular fa-eye" style="color: #281a42"></i>
-        </div>
-        <div class="inpt">
-          <label>tel</label>
-          <input type="number" />
-        </div>
+        <fieldset id="f">
+          <legend id="l">Personnel information and contact</legend>
+          <input name="r1" id="mr" type="radio" /><label for="mr">Mr</label>
+          <input name="r1" id="ms" type="radio" /><label for="ms">Ms</label>
+          <div class="inpt">
+            <label>Name</label>
+            <input type="text" placeholder="nour" />
+          </div>
+          <div class="inpt">
+            <label>Date of birth</label>
+            <input type="date" />
+          </div>
+          <div class="inpt">
+            <label>Email</label>
+            <input type="email" />
+          </div>
+          <div class="inpt">
+            <label>Password</label>
+            <input type="password" />
+            <i class="fa-regular fa-eye" style="color: #38353f"></i>
+          </div>
+          <div class="inpt">
+            <label>Tel</label>
+            <input type="tel" />
+          </div>
+          <div class="inpt"></div>
+          <label for="adress">Adress</label>
+          <textarea id="adress" rows="2" cols="50"></textarea><br />
+          Domaine:
+          <select>
+            <option>programming</option>
+            <option>Web</option>
+            <option>Networks</option>
+            <option>Multimedia</option>
+          </select>
+           </div>
+        </fieldset>
+      
+          <input id="s" value="Send" type="submit" />
+          <input id="r" value="Cancel" type="reset" />
+        
       </form>
     </div>
-    <!--partie footer-->
-    <div class="footer">
+    <!--partie contactme-->
+    <div class="me">
       <hr />
-      <select>
-        <option>email</option>
-        <option>name</option>
-      </select>
-      <h5>number</h5>
+      <h3>"Contact me"</h3>
+      <h5>Number</h5>
       <h5>+216 22906657</h5>
       <h5>Email</h5>
-      <h5>nourtabbane@gmail.com</h5>
-      <h5>adress</h5>
+      <h5>nourtabbane10@gmail.com</h5>
+      <h5>Adress</h5>
       <h5>tunis,mourouj</h5>
     </div>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-whatsapp"></i>
-    <i class="fa-brands fa-discord"></i>
+    <a href="https://www.instagram.com/nour_tabbane/" target="_blank">
+      <i class="fa-brands fa-instagram" style="color: #38353f"></i
+    ></a>
+    <a href="https://web.whatsapp.com/" target="_blank">
+      <i class="fa-brands fa-whatsapp" style="color: #38353f"></i
+    ></a>
+    <a
+      href="https://discord.com/channels/1259795434767908924/1259795434767908932"
+      target="_blank"
+    >
+      <i class="fa-brands fa-discord" style="color: #38353f"></i
+    ></a>
   </body>
 </html>
